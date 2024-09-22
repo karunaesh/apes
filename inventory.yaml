@@ -2,7 +2,7 @@ all:
   hosts:
     web01:
  
-      ansible_host: 54.80.127.154
+      ansible_host: 3.94.208.118
       ansible_user: ec2-user
       
     
