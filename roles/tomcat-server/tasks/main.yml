@@ -6,13 +6,6 @@
     state: present
   when: ansible_os_family == "RedHat"
 
-- name: install java
-  apt:
-    name: java-17-openjdk
-    update_cache: yes
-    state: present
-  when: ansible_os_family == "ubuntu"
-
 - name: Dowloading the tomcat
   ansible.builtin.get_url:
     url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.95/bin/apache-tomcat-9.0.95.tar.gz
